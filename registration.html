@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>STUDENT REGISTRATION</title>
+</head>
+<style>
+	body{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	span{
+		color: red;
+	} 
+	.container
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+		transform: translate(-50%,-50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #8dc8c9;
+        padding: 50px;
+
+        
+    }
+	.btn{
+		position: absolute;
+		left: 290px;
+		top: 580px;
+		background-color: #5184a0; /* Green */
+        border: none;
+        color: white;
+        
+        padding: 15px 16px;
+        text-align: center;
+        text-decoration: none;
+    
+        font-size: 16px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+	}
+	.button1
+    {
+		position: absolute;
+		left: 110px;
+		top: 580px;
+        background-color: #5184a0; /* Green */
+        border: none;
+        color: white;
+        
+        padding: 15px 16px;
+        text-align: center;
+        text-decoration: none;
+    
+        font-size: 16px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+</style>
+
+<body background="bg.jpeg" >
+	<div class="container">
+		<center>
+			<h1>REGISTRATION </h1>
+			<form action="insert.php" method="post">
+				<table>
+					<tr><td><p><label for="regno"><b>REGISTER NUMBER</b><span>*</span></label></p></td>
+					<td><p><input  type="text" name="regno" id="regno" minlength="10" maxlength="10" size="20" required></p></td></tr>
+
+					<tr><td><p><label for="name"><b>FULL NAME</b><span>*</span></label></p></td>
+					<td><p><input type="text" name="name" id="Name" minlength="5" maxlength="50" pattern="[a-zA-Z\s.]+" title="Special characters or numbers are not allowed " required></form></p></td></tr>
+				
+
+					<tr><td><p><label for="bloodgroup"><b>BLOOD GROUP</b><span>*</span></label></p></td>
+					<!-- <td><p><input type="text" name="gender" id="gender"required></p></td></tr> -->
+				
+					<td><select name="bloodgroup" id="bloodgroup"  required>
+						<option value="">SELECT BLOOD GROUP</option>
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+					    </select>
+				    </td>
+			
+					<tr><td><p><label for="phone"><b>MOBILE 1</b><span>*</span></label></p></td>
+					<td><p><input type="tel" name="phone1" id="phone" minlength="13" maxlength="13" pattern="[\+]{1}[0-9]{12}" title="Enter phone number with country code " placeholder="+91**********"  required></p></td></tr>
+
+					<tr><td><p><label for="phone"><b>MOBILE 2</b><span>*</span></label></p></td>
+					<td><p><input type="tel" name="phone2" id="phone" minlength="13" maxlength="13" pattern="[\+]{1}[0-9]{12}" title="Enter phone number with country code " placeholder="+91**********"  required></p></td></tr>
+						
+					<tr><td><p><label for="emailAddress"><b>EMAIL</b><span>*</span></label></p></td>
+					<td><p><input type="email" name="email" id="emailAddress"  pattern="[A-Za-z0-9._%+-]{6,}@[a-z0-9.-]+\.[a-z]{2,}$" title="enter valid email" required></p></td></tr>
+			
+					
+					<tr><td><p><label for="city"><b>CITY</b><span>*</span></label></p></td>
+					<td><p><input type="text" name="city" id="city" pattern="[a-zA-Z\s]+" title="No special characters are allowed" required></p></td></tr>
+				</table>
+                <button class='button1'>SUBMIT</button>
+                <p><form action="index.html"><button class='btn'>CANCEL</button></form></p>
+				<!--<input type="submit" value="Submit">-->
+			</form>
+		</center>
+	</div>
+	
+</body>
+
+</html>

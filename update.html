@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-size: cover ;
+    background-repeat: no-repeat;
+    }
+    button{
+        margin-top: 1.5rem;
+        
+        background-color: #5184a0; /* Green */
+        border: none;
+        color: white;
+        
+        padding: 15px 16px;
+        text-align: center;
+        text-decoration: none;
+    
+        font-size: 16px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .container
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #8dc8c9;
+        padding: 50px;
+    }
+</style>
+<body background="bg.jpeg">
+    <center>
+        <div class="container">
+            <form action="update.php">
+                <p><b><label for="name"> ENTER NAME</label>
+                <input type="text" name="name" id="name" minlength="5" maxlength="10" pattern="[a-z A-Z 0-9]+{10}" title="Must contain atleast 5 and atmost 10 characters only alphabets and numbers are allowed" required></b></p>
+                
+                <p><b><label for="pwd">  PASSWORD    :</label>
+                <input type="text" name="pwd" id="pwd" minlength="8" maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}"  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 and atmost 10 characters" required></b></p>
+
+                
+                <button align="center">SUBMIT</button>
+            </form>
+        </div>
+    </center>
+    
+</body>
+</html>

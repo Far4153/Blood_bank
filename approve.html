@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPROVAL</title>
+</head>
+<style>
+    .container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        background-color: rgb(16, 233, 190);
+        padding: 30px;
+    }
+</style>
+<body background="bg.jpeg">
+    <center>
+        <div class="container">
+            <form action="approve.php">
+                <table>
+                    
+                    <tr><td><p><label for="aadhar"> <b>AADHAR NUMBER </b><span>*</span></label></p></td>
+                    <td><p><input type="tel" name="aadhar" id="reason"  maxlength="12" pattern="[0-9]{12}" title="Enter Adhar Number without spaces" required></p></td></tr>
+                    <tr><td><button align="center">SUBMIT</button> </td></tr>
+                </table>
+            </form>
+       </div>
+    </center>
+</body>
+</html>

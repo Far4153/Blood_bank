@@ -1,0 +1,275 @@
+@import url('https://fonts.google-apis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+}
+.sec h2{
+font-size: xx-large;
+}
+body{
+    background: url("bloodf.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header
+{
+    
+    height: auto;
+    background-size: cover;
+    background-position: center;
+
+}
+ul
+{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+    
+    /* background-color: rgb(207, 64, 64); */
+}
+ul li
+{
+    display: inline-block;
+    padding: 10px;
+    
+    /* background-color:#fff; */
+   
+
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    /* border: 1px solid #fff;  */
+     transition: 0.6s ease; 
+    /* background-color: rgb(207, 64, 64); */
+    
+}
+.admin{
+    width: 100px;
+    padding: 5px 10px;
+
+}
+ul li a :hover
+{
+    background-color: #fff;
+    color: #000;
+    
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.logo img
+{
+    margin-top: .5rem;
+   float: left;
+   width: 100px;
+   height: auto;
+
+}
+/* .main
+{
+    max-width: 1500px;
+    margin: auto;
+} */
+.title
+{
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-45%,-50%);
+
+}
+.title h1
+{
+    font-size: 50px;
+    text-align: center;
+
+    
+}
+.title h1 span
+{
+color: rgb(255, 0, 0);
+background-color: black;
+text-align: center;
+}
+.button
+{
+    position: absolute;
+    top: 68%;
+    left: 77%;
+    transform:translate(-65%,-50%) ;
+    
+   
+}
+.btn 
+{
+    border: 2px solid #000;
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(206, 201, 201, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
+    
+}
+#reg
+{
+    margin-right:30px;
+
+}
+
+/* .sec h1
+{
+    font-size: 500%;
+    
+} */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+    transform:translate(0%,100%);
+}
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.social img{
+    width: 0.063rem;
+}
+.tw{
+    width: 3.125rem;
+}
+.ig{
+    width: 3.125rem;
+}
+.fb{
+    width: 3.125rem;
+}
+.yt{
+    width: 3.125rem;
+}
+
+
+
+
+.footer-bottom{
+    background: #000;
+    width: 97%;
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: center;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+ .footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+ }
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+/* .foot
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    transform:translate(-100%,-50%) ;
+    box-sizing: border-box;
+    background: #ede7f6; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+} 
+footer
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+footer .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+footer .container.sec.aboutus
+{
+    width: 40%;
+}
+footer .container.sec.aboutus h2
+{
+    position: relative;
+    color:white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before
+{
+    content:'';
+    position: absolute;
+    bottom:-5px;
+    left:0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer p
+{
+    color: #999;
+}
+.sci
+{
+    margin-top: 20px;
+    display:flex;
+
+} */
